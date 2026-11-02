@@ -1,0 +1,17 @@
+*.pfx
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+*.jsonl
+backups/
+logs/
+privado/
+private/
+*PRIVADO*
+settings.json
+notice-qr.png
+installed.json
+Thumbs.db
+Desktop.ini
