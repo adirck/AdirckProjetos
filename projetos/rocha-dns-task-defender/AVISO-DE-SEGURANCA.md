@@ -27,3 +27,9 @@ A correção de interface da versão 2.0.1 não é uma validação de segurança
 4. Antes de nova distribuição, concluir análise de segurança, testes de instalação em VM e avaliação de assinatura digital.
 
 **Até o momento não foi enviado nenhum arquivo à Microsoft nem recebido parecer. Não há nova versão liberada.**
+
+## Atualização: prévia nativa 3.0.0-preview.1
+
+Foi preparada uma nova implementação C# sem interpretador PowerShell ou scripts embarcados, com MSI convencionais. Os testes isolados, a extração dos quatro MSI e as verificações locais pelo Microsoft Defender passaram, sem detecção nos novos artefatos. Trata-se de prévia compartilhada diretamente com o autor para homologação; nenhum novo binário foi liberado nesta branch. [Situação e limites dos testes](versoes/3.0.0-preview.1/README.md).
+
+Não houve contorno ou desativação do antivírus. O novo resultado não prova que as detecções das versões antigas eram falsos positivos e não substitui assinatura ou parecer formal da Microsoft.

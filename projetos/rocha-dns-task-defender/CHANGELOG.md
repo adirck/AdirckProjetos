@@ -1,5 +1,14 @@
 # Histórico de alterações
 
+## 3.0.0-preview.1 — 01/11/2026 — teste controlado
+
+- Reimplementação em C# nativo para .NET Framework; removido o interpretador e o carregamento de scripts PowerShell.
+- DNS via API Windows e tarefas via COM, sem comandos de shell para essas operações.
+- Instaladores MSI convencionais nos quatro idiomas; desinstalação pelo Windows Installer.
+- Preservados editor, prévias, importação de QR, monitoramento, backups e caixinha de doação.
+- Testes isolados e extração dos MSI passaram. Defender local não detectou ameaças nos novos artefatos, inclusive ZIP final; isso não é um parecer universal nem uma assinatura.
+- Binários apenas para teste controlado, não publicados nesta branch. Homologação administrativa completa permanece pendente.
+
 ## Suspensão de downloads — 01/11/2026
 
 - Recebido relato de detecção Trojan:Script/Ulthar.A!ml durante download, com item removido do cache do Opera.
