@@ -8,7 +8,7 @@ Cada projeto tem sua própria pasta. As atualizações são adicionadas como nov
 
 | Projeto | Versão atual | Situação | Acesso |
 | --- | --- | --- | --- |
-| Rocha DNS & Task Defender | 2.0.0 | Em homologação | [Página do projeto](projetos/rocha-dns-task-defender/README.md) |
+| Rocha DNS & Task Defender | 2.0.1 | Em homologação | [Página do projeto](projetos/rocha-dns-task-defender/README.md) |
 
 ## Organização
 
@@ -20,8 +20,8 @@ projetos/
     CHANGELOG.md
     docs/
     versoes/
-      2.0.0/
-        Rocha-DNS-Task-Defender-2.0.0-Windows.zip
+      2.0.1/
+        Rocha-DNS-Task-Defender-2.0.1-Windows.zip
         SHA256SUMS.txt
 modelos/
   novo-projeto/
@@ -49,7 +49,7 @@ Use nomes curtos, sem espaços ou acentos, para os nomes das pastas. Cada proces
 4. Atualize `VERSAO-ATUAL.md`, a documentação aplicável e esta tabela.
 5. Mantenha os pacotes anteriores nas suas pastas originais. Não substitua silenciosamente um arquivo de versão publicada.
 
-Sugestão de numeração: correção `2.0.1`, nova funcionalidade compatível `2.1.0`, mudança incompatível `3.0.0`.
+Sugestão de numeração: correção `2.0.2`, nova funcionalidade compatível `2.1.0`, mudança incompatível `3.0.0`.
 
 ## Conteúdo público e privado
 

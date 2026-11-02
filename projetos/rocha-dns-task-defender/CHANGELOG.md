@@ -1,5 +1,12 @@
 # Histórico de alterações
 
+## 2.0.1 — 01/11/2026
+
+- Corrige a resolução de `New-NoticePanel` no instalador e editor compilados. As funções agora são carregadas no escopo principal da execução.
+- Inicia o temporizador da prévia somente depois da inicialização e trata falhas da prévia sem deixar uma exceção não tratada da interface.
+- Teste de regressão reproduz o erro original e verifica a correção no ambiente compilado para os quatro idiomas, incluindo prévia ao vivo, abertura da janela e salvamento com anexo.
+- Testes gerais de interface, menu e motor de monitoramento continuam passando. A homologação administrativa completa em VM permanece pendente.
+
 ## 2.0.0 — 01/11/2026
 
 - Nome público: Rocha DNS & Task Defender.

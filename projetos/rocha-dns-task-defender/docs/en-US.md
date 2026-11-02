@@ -1,6 +1,6 @@
 # Rocha DNS & Task Defender
 
-Developed by **Alexandre Rocha**. Windows desktop application for local HOSTS and IPv4 DNS monitoring, backups, anomaly notices and manual review of scheduled tasks. Version 2.0.0, 2026-11-01.
+Developed by **Alexandre Rocha**. Windows desktop application for local HOSTS and IPv4 DNS monitoring, backups, anomaly notices and manual review of scheduled tasks. Version 2.0.1, 2026-11-01.
 
 **Distribution model:** public compiled binaries; private source code. The public ZIP intentionally contains no `.ps1` or `.cs` files. Implementation resources are embedded inside .NET executables. This reduces casual access to scripts but does not prevent reverse engineering. Do not publish the private source archive if you want the implementation to remain private.
 
@@ -95,3 +95,9 @@ Validated locally: complete four-language dictionaries, language picker, localiz
 6. Uninstall from the localized shortcut and Installed Apps; verify no startup task or app processes remain and evidence/settings are retained.
 
 This project has not been assigned an open-source license. Public distribution is intended for compiled releases; keep the separate source archive private.
+
+
+## 2.0.1 - compiled editor fix
+
+Fixed missing New-NoticePanel in the compiled installer and message editor by loading the entry point in the root runspace scope. Preview errors are contained and preview timers start only after initialization. A regression test reproduces the old failure and verifies live preview, full-window preview and settings/attachment save through the compiled host in all four languages. Run Test-HostedEditor.ps1 after building. Administrative installation/uninstallation and reboot still require VM acceptance testing.
+

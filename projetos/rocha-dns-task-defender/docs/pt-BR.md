@@ -1,6 +1,6 @@
 # Rocha DNS & Task Defender - início rápido
 
-Desenvolvido por **Alexandre Rocha**. Versão 2.0.0, 01/11/2026.
+Desenvolvido por **Alexandre Rocha**. Versão 2.0.1, 01/11/2026.
 
 ## Instalar
 1. Teste primeiro em uma máquina virtual descartável. Se usa o antigo Soma Defender, desinstale-o antes; não rode os dois juntos.
