@@ -1,38 +1,44 @@
 # Rocha DNS & Task Defender
 
-Aplicação Windows desenvolvida por **Alexandre Rocha** para diagnosticar e corrigir alterações em HOSTS e DNS IPv4, preservar backups e apresentar avisos de anomalia. Inclui revisão manual de tarefas agendadas.
+Aplicação desenvolvida por **Alexandre Rocha**. Implementação Windows Forms em C#, sem PowerShell ou scripts embutidos.
 
-**Distribuição suspensa: nenhuma versão liberada para instalação.**
+## Versão 3.0.0 - primeira edição pública para validação
 
-Foi relatada a detecção **Trojan:Script/Ulthar.A!ml**. O bloqueio de leitura do ZIP 2.0.1 também ocorreu na máquina de desenvolvimento. [Leia o aviso de segurança e a situação da análise](AVISO-DE-SEGURANCA.md). Não restaure ou permita o arquivo e não desative as proteções para executá-lo.
+**[Baixar Windows x64](https://github.com/adirck/AdirckProjetos/releases/download/v3.0.0/Rocha-DNS-Task-Defender-3.0.0-Windows-x64.zip)**
+
+[Release e arquivos de verificação](https://github.com/adirck/AdirckProjetos/releases/tag/v3.0.0) | [Manual de instalação e uso](docs/3.0.0/LEIA-ME.md) | [SHA256](versoes/3.0.0/SHA256SUMS.txt)
+
+Extraia todo o ZIP e abra Setup.exe. Escolha o idioma e uma política: Google (8.8.8.8 / 8.8.4.4), automático/DHCP ou dois DNS personalizados. Configure o aviso e confira a prévia antes de salvar. Ao atualizar, encerre a cópia anterior pelo ícone A.R.
+
+## Recursos
+
+- Português BR, inglês EUA, espanhol e japonês.
+- Ícone A.R com estados verde, amarelo e vermelho.
+- Monitoramento de HOSTS e DNS IPv4 a cada 15 segundos, com backup antes de corrigir.
+- Restaura a política DNS selecionada. No automático, remove DNS manual e aceita os servidores recebidos da rede; não altera o IP fixo da placa.
+- Aviso único personalizável com contato e QR, mais o motivo específico da correção.
+- QR anexado como PDF (primeira página), PNG, JPEG, BMP, GIF ou TIFF, com prévia ao vivo e janela de teste.
+- Revisão de tarefas agendadas; nenhuma tarefa é apagada indiscriminadamente.
+- Instaladores MSI convencionais, início após login da conta administradora configurada, editor e desinstalador.
+
+## Validação e limites
+
+O autor relatou instalação, desinstalação e abertura completa bem-sucedidas em uma máquina com a prévia. Os testes locais dos quatro idiomas, três políticas simuladas, backups, avisos e extração dos MSI passaram. O Defender local não detectou ameaças no ZIP desta edição. Isso não garante o mesmo resultado em todos os produtos de segurança nem constitui aprovação formal da Microsoft/ESET.
+
+**A validação ampliada está em andamento.** Especialmente DNS automático/personalizado em redes reais, retorno após reiniciar e procedimentos de recuperação devem ser conferidos pelo TI. Executáveis ainda sem assinatura digital. Não ignore detecções nem crie exclusões para continuar.
+
+Requer Windows 10 build 19041 ou posterior / Windows 11 x64 e .NET Framework 4.8. Não é serviço: não atua antes do login ou automaticamente em outras contas. HOSTS limpo remove entradas legítimas e DNS público pode afetar nomes internos. Não altera IPv6, proxy ou DNS seguro do navegador.
+
+## Documentação e histórico
+
+- [Manual da edição 3.0.0](docs/3.0.0/LEIA-ME.md)
+- [Relatório de validação](versoes/3.0.0/VALIDACAO.md)
+- [Histórico de alterações](CHANGELOG.md)
+- [Versão atual](VERSAO-ATUAL.md)
+- [Aviso de segurança das versões antigas](AVISO-DE-SEGURANCA.md)
+
+As versões 2.0.0 e 2.0.1 continuam suspensas e não devem ser utilizadas. Os manuais antigos em docs são históricos; use o manual da edição 3.0.0.
 
 ## Distribuição
 
-Os downloads 2.0.0 e 2.0.1 foram retirados da branch principal. O histórico permanece para rastreabilidade, não para uso das versões bloqueadas.
-
-A versão 2.0.1 corrige o erro `New-NoticePanel não é reconhecido` ao abrir a configuração da mensagem no instalador compilado. A prévia ao vivo, a janela de teste e o salvamento foram verificados no mesmo tipo de execução compilada nos quatro idiomas.
-
-As instruções de instalação nos manuais abaixo são históricas e não devem ser seguidas enquanto a suspensão estiver vigente.
-
-## Documentação
-
-- [Guia em português](docs/pt-BR.md)
-- [English](docs/en-US.md)
-- [Español](docs/es-ES.md)
-- [日本語](docs/ja-JP.md)
-- [Histórico de alterações](CHANGELOG.md)
-- [Link para a versão atual](VERSAO-ATUAL.md)
-
-## Antes de utilizar
-
-- Padrão DNS IPv4: **8.8.8.8 e 8.8.4.4**. A política de HOSTS limpo também remove entradas legítimas; valide a compatibilidade com a rede.
-- O monitor inicia após o login da conta administradora configurada. Não é um serviço de sistema e não atua antes do login nem automaticamente para outros usuários.
-- O ícone **A.R** indica os estados verde, amarelo e vermelho. **Encerrar** no menu do ícone para a execução atual; não desinstala.
-- Para desinstalar, utilize **Uninstall.exe**, o atalho do menu Iniciar ou Aplicativos instalados. Logs, backups, configurações pessoais e o estado atual de DNS/HOSTS são preservados.
-- Os executáveis ainda não têm assinatura digital. Instalação, desinstalação, correções administrativas reais e retorno após reinício precisam de homologação em VM.
-
-## Código e distribuição
-
-Esta pasta distribui somente o pacote público compilado e sua documentação. O código-fonte permanece privado. O empacotamento e as permissões não tornam o programa inviolável contra engenharia reversa ou acesso administrativo.
-
-A versão não recebeu uma licença de código aberto. Consulte o arquivo `NOTICE.txt` dentro do pacote e a documentação de uso.
+Somente pacote compilado e documentação são públicos. Código-fonte permanece privado. Não há licença de código aberto aplicada ao código; consulte NOTICE.txt no pacote. Configurações pessoais e evidências não são publicadas.

@@ -1,4 +1,8 @@
-# Downloads suspensos - investigação de detecção
+# Histórico de segurança e situação da distribuição
+
+**Atualização de 02/11/2026:** a edição C# 3.0.0 está publicada para validação pelo autor. O Defender local não detectou ameaças no ZIP desta edição; isso não é garantia universal ou parecer formal. [Situação atual](VERSAO-ATUAL.md). As versões 2.0.0 e 2.0.1 continuam suspensas.
+
+## Registro original de suspensão
 
 **Data: 01/11/2026. Versões afetadas: 2.0.0 e 2.0.1.**
 
@@ -26,10 +30,11 @@ A correção de interface da versão 2.0.1 não é uma validação de segurança
 3. Considerar falso positivo somente após evidência técnica e resposta do fornecedor; não presumir isso pelo nome genérico da detecção.
 4. Antes de nova distribuição, concluir análise de segurança, testes de instalação em VM e avaliação de assinatura digital.
 
-**Até o momento não foi enviado nenhum arquivo à Microsoft nem recebido parecer. Não há nova versão liberada.**
+**Registro de 01/11/2026:** não havia nova versão liberada. Até 02/11/2026, não houve envio ao portal da Microsoft nem parecer formal. Consulte a atualização no topo para a edição 3.0.0.
 
 ## Atualização: prévia nativa 3.0.0-preview.1
 
 Foi preparada uma nova implementação C# sem interpretador PowerShell ou scripts embarcados, com MSI convencionais. Os testes isolados, a extração dos quatro MSI e as verificações locais pelo Microsoft Defender passaram, sem detecção nos novos artefatos. Trata-se de prévia compartilhada diretamente com o autor para homologação; nenhum novo binário foi liberado nesta branch. [Situação e limites dos testes](versoes/3.0.0-preview.1/README.md).
 
 Não houve contorno ou desativação do antivírus. O novo resultado não prova que as detecções das versões antigas eram falsos positivos e não substitui assinatura ou parecer formal da Microsoft.
+

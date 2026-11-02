@@ -1,5 +1,14 @@
 # Histórico de alterações
 
+## 3.0.0 — 02/11/2026 — primeira edição pública para validação
+
+- Consolida a implementação C# e o Setup leve, com seleção de idioma, elevação UAC e log de instalação.
+- Inclui as três políticas DNS, validação e preservação da escolha, aviso com motivo, prévias e ícones A.R.
+- Instalação/desinstalação e abertura completa da prévia confirmadas pelo autor em uma máquina.
+- Testes locais passaram e o Defender local não detectou ameaças no ZIP final; executáveis ainda sem assinatura e validação ampliada pendente.
+- Versões 2.0.0 e 2.0.1 permanecem suspensas; fonte privado.
+
+
 ## 3.0.0-preview.1 — 01/11/2026 — teste controlado
 
 - Reimplementação em C# nativo para .NET Framework; removido o interpretador e o carregamento de scripts PowerShell.
@@ -39,3 +48,4 @@
 ### Validação
 
 Passaram os testes locais de interface e idiomas, prévia, salvamento, importação PDF, menu do ícone e correções simuladas. A instalação/desinstalação e as alterações administrativas reais, inclusive após reinício, ainda precisam de homologação em máquina virtual.
+

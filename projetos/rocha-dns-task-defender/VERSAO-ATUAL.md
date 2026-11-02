@@ -1,11 +1,9 @@
 # Versão atual
 
-**Nenhuma versão liberada. Downloads suspensos desde 01/11/2026.**
+**3.0.0 - Windows x64 - primeira edição pública C#, em validação pelo autor.**
 
-Há uma [prévia 3.0.0-preview.1 reimplementada em C#](versoes/3.0.0-preview.1/README.md), compartilhada diretamente para teste controlado. Os testes locais e a verificação local pelo Defender passaram; a homologação completa ainda não foi concluída. Os binários não estão publicados aqui.
+[Download](https://github.com/adirck/AdirckProjetos/releases/download/v3.0.0/Rocha-DNS-Task-Defender-3.0.0-Windows-x64.zip)
 
-As versões 2.0.0 e 2.0.1 estão sob investigação após detecção pelo Microsoft Defender. [Aviso de segurança](AVISO-DE-SEGURANCA.md).
+[Release](https://github.com/adirck/AdirckProjetos/releases/tag/v3.0.0) | [Manual](docs/3.0.0/LEIA-ME.md) | [SHA256](versoes/3.0.0/SHA256SUMS.txt)
 
-Os hashes e o histórico são mantidos para análise e não constituem liberação para execução.
-
-Ao publicar a próxima atualização, altere os links desta página e mantenha os arquivos antigos na pasta da versão anterior.
+As versões 2.0.0 e 2.0.1 permanecem suspensas. A edição 3.0.0 não é uma homologação universal nem comprova que as detecções antigas eram falsos positivos.
