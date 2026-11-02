@@ -2,15 +2,17 @@
 
 Aplicação Windows desenvolvida por **Alexandre Rocha** para diagnosticar e corrigir alterações em HOSTS e DNS IPv4, preservar backups e apresentar avisos de anomalia. Inclui revisão manual de tarefas agendadas.
 
-**Versão atual: 2.0.1 — em homologação.**
+**Distribuição suspensa: nenhuma versão liberada para instalação.**
 
-## Baixar e instalar
+Foi relatada a detecção **Trojan:Script/Ulthar.A!ml**. O bloqueio de leitura do ZIP 2.0.1 também ocorreu na máquina de desenvolvimento. [Leia o aviso de segurança e a situação da análise](AVISO-DE-SEGURANCA.md). Não restaure ou permita o arquivo e não desative as proteções para executá-lo.
 
-[Baixar Rocha DNS & Task Defender 2.0.1 para Windows](versoes/2.0.1/Rocha-DNS-Task-Defender-2.0.1-Windows.zip)
+## Distribuição
+
+Os downloads 2.0.0 e 2.0.1 foram retirados da branch principal. O histórico permanece para rastreabilidade, não para uso das versões bloqueadas.
 
 A versão 2.0.1 corrige o erro `New-NoticePanel não é reconhecido` ao abrir a configuração da mensagem no instalador compilado. A prévia ao vivo, a janela de teste e o salvamento foram verificados no mesmo tipo de execução compilada nos quatro idiomas.
 
-Extraia todos os arquivos e execute **Setup.exe** como administrador. Escolha português do Brasil, inglês dos EUA, espanhol ou japonês, leia a política e configure a mensagem de aviso. O instalador oferece prévia ao vivo e anexo de QR code em PDF ou imagem.
+As instruções de instalação nos manuais abaixo são históricas e não devem ser seguidas enquanto a suspensão estiver vigente.
 
 ## Documentação
 

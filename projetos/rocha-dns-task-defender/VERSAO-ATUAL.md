@@ -1,9 +1,9 @@
 # Versão atual
 
-**2.0.1** — Windows — situação: **em homologação**.
+**Nenhuma versão liberada. Downloads suspensos desde 01/11/2026.**
 
-[Baixar pacote](versoes/2.0.1/Rocha-DNS-Task-Defender-2.0.1-Windows.zip)
+As versões 2.0.0 e 2.0.1 estão sob investigação após detecção pelo Microsoft Defender. [Aviso de segurança](AVISO-DE-SEGURANCA.md).
 
-[Verificar SHA256](versoes/2.0.1/SHA256SUMS.txt)
+Os hashes e o histórico são mantidos para análise e não constituem liberação para execução.
 
 Ao publicar a próxima atualização, altere os links desta página e mantenha os arquivos antigos na pasta da versão anterior.

@@ -2,13 +2,15 @@
 
 Central de distribuição e documentação dos projetos de **Alexandre Rocha**.
 
+> **Aviso de segurança (01/11/2026):** os downloads do Rocha DNS & Task Defender estão suspensos após detecção pelo Microsoft Defender. [Leia o aviso antes de usar versões anteriores](projetos/rocha-dns-task-defender/AVISO-DE-SEGURANCA.md).
+
 Cada projeto tem sua própria pasta. As atualizações são adicionadas como novas versões, preservando o histórico e os pacotes anteriores.
 
 ## Projetos
 
 | Projeto | Versão atual | Situação | Acesso |
 | --- | --- | --- | --- |
-| Rocha DNS & Task Defender | 2.0.1 | Em homologação | [Página do projeto](projetos/rocha-dns-task-defender/README.md) |
+| Rocha DNS & Task Defender | Nenhuma liberada | Downloads suspensos: investigação de detecção | [Página do projeto](projetos/rocha-dns-task-defender/README.md) |
 
 ## Organização
 

@@ -1,5 +1,13 @@
 # Histórico de alterações
 
+## Suspensão de downloads — 01/11/2026
+
+- Recebido relato de detecção Trojan:Script/Ulthar.A!ml durante download, com item removido do cache do Opera.
+- Confirmada recusa do Windows ao ler o ZIP 2.0.1 na máquina de desenvolvimento por detecção de ameaça.
+- Retirados os ZIPs 2.0.0 e 2.0.1 da branch principal; histórico, documentação e hashes preservados.
+- Não foi concluída análise que permita classificar como falso positivo; não foi gerada versão alternativa para contornar o bloqueio.
+- Consulte AVISO-DE-SEGURANCA.md. Nenhuma versão está liberada.
+
 ## 2.0.1 — 01/11/2026
 
 - Corrige a resolução de `New-NoticePanel` no instalador e editor compilados. As funções agora são carregadas no escopo principal da execução.
